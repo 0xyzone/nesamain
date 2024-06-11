@@ -1,4 +1,4 @@
 @import './vendor/filament/filament/resources/css/theme.css';
-@import "./vendor/rawilk/filament-quill/resources/css/content.css";
+@import './vendor/rawilk/filament-quill/resources/css/content.css';
 
 @config 'tailwind.config.js';

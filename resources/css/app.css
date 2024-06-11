@@ -1,12 +1,3 @@
-@import "./vendor/rawilk/filament-quill/resources/css/content.css";
-
-/*
- * Alternatively, you may import the entire stylesheet, however that's not recommended
- * since Quill's editor styles are quite expensive, and we load the stylesheet necessary
- * for the editor automatically for you.
- */
-/* @import '<path-to-vendor>/rawilk/filament-quill/resources/css/app.css'; */
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

@@ -6,7 +6,7 @@ export default {
         './app/Filament/**/*.php',
         './resources/views/filament/**/*.blade.php',
         './vendor/filament/**/*.blade.php',
-        "./vendor/rawilk/filament-quill/resources/css/content.css"
+        "./vendor/rawilk/filament-quill/resources/css/custom.css"
     ],
     plugins: [
         "tailwindcss/nesting",
