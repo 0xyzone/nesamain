@@ -11,7 +11,15 @@ export default {
     'quill-content',
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'gradient-background': 'linear-gradient(165deg, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.75))',
+      },
+      colors: {
+        "base-color" : "#d97706",
+        "background" : "#000000"
+      }
+    },
   },
   plugins: [
     "tailwindcss/nesting",
