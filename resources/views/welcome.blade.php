@@ -95,7 +95,7 @@
                     </div>
                 </div>
                 <div class="mt-5 sm:mt-16 lg:mt-0 flex flex-col justify-center gap-3">
-                    <h1 class="text-sm text-base-color">ABOUT US</h1>
+                    <h1 class="text-sm text-base-color font-bold">ABOUT US</h1>
                     <h1 class="text-2xl">Rise of Nepal Esports</h1>
                     <p class="text-justify text-gray-400">
                         Nepal Esports Association (NESA) came into basing through the
@@ -113,7 +113,7 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full gap-3">
                 <div class="flex flex-col gap-5 pl-0 mb-2 sm:mb-0">
                     <div class="flex flex-col gap-3">
-                        <h1 class="text-sm text-base-color">OUR GAMES</h1>
+                        <h1 class="text-sm text-base-color font-bold">OUR GAMES</h1>
                         <h1 class="text-2xl">Nepal Esports Games</h1>
                         <!-- <a href="./games.html" class="button-styled">All Games</a> -->
                         <p class="text-gray-400">
@@ -144,7 +144,7 @@
         <!-- news  -->
         <div class="my-16">
             <div class="flex flex-col items-center gap-3">
-                <h1 class="text-sm text-base-color">Latest News</h1>
+                <h1 class="text-sm text-base-color font-bold">Latest News</h1>
                 <h1 class="text-2xl">News Highlights</h1>
                 <p class="max-w-2xl text-center text-gray-400">
                     Stay updated with the latest events and stories in Nepal's esports
