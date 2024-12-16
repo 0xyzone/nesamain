@@ -16,7 +16,7 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
     <script src="/public/js/script.js"></script>
-    <script src="/public/mock/mock-news.js"></script>
+    <script src="mock/mock-news.js"></script>
 </head>
 <body class="font-open-sans">
     <div class="relative px-10 md:px-20 xl:px-32 pb-5 min-w-screen w-full min-h-svh h-full text-white bg-background">
