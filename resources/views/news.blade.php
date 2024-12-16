@@ -1,3 +1,3 @@
 <x-app>
-    this is news page
+    Coming Soon!
 </x-app>

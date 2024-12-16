@@ -2,21 +2,21 @@
     <!-- banner  -->
     <div class="flex justify-end">
         <div class="relative h-[600px] w-[90%]">
-            <img src="storage/images/nesa/nesa-03.jpg" alt="Landing Banner" class="h-full w-full object-cover" />
+            <img src="{{ asset('img/nesa/nesa-03.jpg') }}" alt="Landing Banner" class="h-full w-full object-cover" />
             <div class="absolute inset-0 z-10 h-full w-full" style="
-              background: linear-gradient(
+            background: linear-gradient(
                 90deg,
                 rgba(0, 0, 0),
                 rgba(255, 255, 255, 0),
                 rgba(0, 0, 0)
-              );
+            );
             "></div>
             <div class="absolute top-1/2 -translate-y-1/2 -left-10 md:-left-20 lg:-left-32 z-20 bg-transparent">
                 <div class="flex flex-col gap-5">
                     <h1 class="text-4xl md:text-5xl xl:text-6xl font-bold">
                         <span class="text-base-color">ESPORTS UNIVERSE</span><br /><span>IS CALLING YOU!</span>
                     </h1>
-                    <h1 class="text-lg">Since 2020</h1>
+                    <h1 class="text-lg">Since 2016</h1>
                 </div>
             </div>
             <div class="absolute -bottom-10 right-0 text-center z-20">
@@ -35,16 +35,16 @@
                     <div class="h-[450px] w-[360px] rounded-xl bg-white bg-opacity-25 rotate-[10deg]"></div>
                 </div>
                 <div class="h-[450px] w-[360px] rounded-xl z-20 shadow-lg shadow-[#181918]">
-                    <img src="storage/images/nesa/nesa-05.jpg" alt="" class="h-full w-full object-cover rounded-xl" />
+                    <img src="img/nesa/nesa-05.jpg" alt="" class="h-full w-full object-cover rounded-xl" />
                 </div>
                 <div class="hidden sm:block absolute -bottom-16 -right-0 2xl:right-20 z-30">
                     <div class="h-[260px] w-[230px] rounded-xl shadow-lg shadow-[#181918]">
-                        <img src="storage/images/nesa/nesa-09.jpg" alt="" class="h-full w-full object-cover rounded-xl" />
+                        <img src="img/nesa/nesa-09.jpg" alt="" class="h-full w-full object-cover rounded-xl" />
                     </div>
                 </div>
                 <div class="hidden sm:block absolute -bottom-2 -left-5 md:-left-10 2xl:left-10 z-30">
                     <div class="h-[260px] w-[230px] rounded-xl shadow-lg shadow-[#181918]">
-                        <img src="storage/images/nesa/nesa-06.jpg" alt="" class="h-full w-full object-cover rounded-xl" />
+                        <img src="img/nesa/nesa-06.jpg" alt="" class="h-full w-full object-cover rounded-xl" />
                     </div>
                 </div>
             </div>
@@ -57,7 +57,7 @@
                     Deuja, Jyoti Ratna Bajracharya, Bimal Tamrakar, Gopal Timsina) who
                     are Infotech professionals and fans of electronic games.
                 </p>
-                <a href="./about.html" class="button-styled">About Us</a>
+                <a href="{{ route('about.index') }}" class="button-styled">About Us</a>
             </div>
         </div>
     </div>
@@ -78,25 +78,25 @@
                 </div>
             </div>
             <div class="w-full h-[200px] sm:h-[250px] rounded-xl overflow-hidden">
-                <img src="storage/images/games/pes.webp" alt="" class="h-full w-full object-cover" loading="lazy" />
+                <img src="{{ asset('img/games/pes.web') }}p" alt="" class="h-full w-full object-cover" loading="lazy" />
             </div>
             <div class="w-full h-[200px] sm:h-[250px] rounded-xl overflow-hidden">
-                <img src="storage/images/games/dota2.webp" alt="" class="h-full w-full object-cover" loading="lazy" />
+                <img src="{{ asset('img/games/dota2.webp')}}" alt="" class="h-full w-full object-cover" loading="lazy" />
             </div>
             <div class="w-full h-[200px] sm:h-[250px] rounded-xl overflow-hidden">
-                <img src="storage/images/games/valorant.webp" alt="" class="h-full w-full object-cover" loading="lazy" />
+                <img src="{{ asset('img/games/valorant.webp') }}" alt="" class="h-full w-full object-cover" loading="lazy" />
             </div>
             <div class="w-full h-[200px] sm:h-[250px] rounded-xl overflow-hidden">
-                <img src="storage/images/games/mlbb.webp" alt="" class="h-full w-full object-cover" loading="lazy" />
+                <img src="{{ asset('img/games/mlbb.webp') }}" alt="" class="h-full w-full object-cover" loading="lazy" />
             </div>
             <div class="w-full h-[200px] sm:h-[250px] rounded-xl overflow-hidden">
-                <img src="storage/images/games/csgo.webp" alt="" class="h-full w-full object-cover" loading="lazy" />
+                <img src="{{ asset('img/games/csgo.webp') }}" alt="" class="h-full w-full object-cover" loading="lazy" />
             </div>
         </div>
     </div>
 
     <!-- news  -->
-    <div class="my-16">
+    {{-- <div class="my-16">
         <div class="flex flex-col items-center gap-3">
             <h1 class="text-sm text-base-color font-bold">Latest News</h1>
             <h1 class="text-2xl">News Highlights</h1>
@@ -115,21 +115,21 @@
         <div class="mt-5 flex justify-center">
             <a href="./news.html" class="button-styled">More News</a>
         </div>
-    </div>
+    </div> --}}
 
     <!-- join us -->
     <div class="mt-10">
         <div class="relative h-[50vh] w-full rounded-2xl overflow-hidden">
-            <img src="storage/images/nesa/nesa-04.jpg" alt="" class="h-full w-full object-cover" />
+            <img src="img/nesa/nesa-04.jpg" alt="" class="h-full w-full object-cover" />
             <div class="absolute inset-0 h-full w-full bg-background bg-opacity-50">
                 <div class="h-full w-full flex flex-col gap-2 items-center justify-center">
                     <h1 class="text-base md:text-xl: lg:text-3xl 2xl:text-5xl uppercase font-bold text-center">
                         Are You Ready To Join?
                     </h1>
                     <div class="text-2xl flex gap-5 mt-5">
-                        <a href="#" class="text-white hover:scale-125 duration-200 transform ease-in-out"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#" class="text-white hover:scale-125 duration-200 transform ease-in-out"><i class="fa-brands fa-discord"></i></a>
-                        <a href="#" class="text-white hover:scale-125 duration-200 transform ease-in-out"><i class="fa-brands fa-instagram"></i></a>
+                        <a target="_blank" href="https://fb.gg/nepalesports" class="text-white hover:scale-125 duration-200 transform ease-in-out"><i class="fa-brands fa-facebook-f"></i></a>
+                        {{-- <a href="https://" class="text-white hover:scale-125 duration-200 transform ease-in-out"><i class="fa-brands fa-discord"></i></a> --}}
+                        <a target="_blank" href="https://instagram.com/nepalesport" class="text-white hover:scale-125 duration-200 transform ease-in-out"><i class="fa-brands fa-instagram"></i></a>
                     </div>
                 </div>
             </div>

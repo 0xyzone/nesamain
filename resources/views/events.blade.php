@@ -1,3 +1,3 @@
 <x-app>
-    this is events page
+    Coming Soon!
 </x-app>

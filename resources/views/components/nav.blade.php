@@ -8,11 +8,11 @@
             <div id="navbar_content" class="hidden lg:flex items-center gap-8 font-medium text-base">
                 <a href="{{ route('home') }}" class="hover:text-base-color transform ease-in-out duration-200 {{ request()->routeIs('home') || request()->routeIs('/') ? '!text-base-color' : '' }}">Home</a>
                 <a href="{{ route('about.index') }}" class="{{ request()->routeIs('about.index') ? '!text-base-color' : '' }} hover:text-base-color transform ease-in-out duration-200">About Us</a>
-                <a href="{{ route('events.index') }}" class="{{ request()->routeIs('events.index') ? '!text-base-color' : '' }} hover:text-base-color transform ease-in-out duration-200">Events</a>
+                {{-- <a href="{{ route('events.index') }}" class="{{ request()->routeIs('events.index') ? '!text-base-color' : '' }} hover:text-base-color transform ease-in-out duration-200">Events</a>
 
-                <a href="{{ route('news.index') }}" class="{{ request()->routeIs('news.index') ? '!text-base-color' : '' }} hover:text-base-color transform ease-in-out duration-200">News</a>
+                <a href="{{ route('news.index') }}" class="{{ request()->routeIs('news.index') ? '!text-base-color' : '' }} hover:text-base-color transform ease-in-out duration-200">News</a> --}}
                 <a href="{{ route('contact.index') }}" class="{{ request()->routeIs('contact.index') ? '!text-base-color' : '' }} hover:text-base-color transform ease-in-out duration-200">Contact Us</a>
-                <a href="{{ route('certificates.index') }}" class="{{ request()->routeIs('certificates.index') ? '!text-base-color' : '' }} hover:text-base-color transform ease-in-out duration-200">Certificates</a>
+                {{-- <a href="{{ route('certificates.index') }}" class="{{ request()->routeIs('certificates.index') ? '!text-base-color' : '' }} hover:text-base-color transform ease-in-out duration-200">Certificates</a> --}}
                 <ion-icon name="close" id="close-mobile-nav" class="lg:hidden cursor-pointer text-3xl hover:scale-105 transform ease-in-out duration-300 bg-transparent text-white border-0"></ion-icon>
             </div>
         </div>
