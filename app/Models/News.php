@@ -4,8 +4,10 @@ namespace App\Models;
 
 use App\Models\User;
 use App\Models\Category;
+use App\NewsStatus;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasOne;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class News extends Model
@@ -13,13 +15,13 @@ class News extends Model
     use HasFactory;
 
     /**
-     * Get the user associated with the News
+     * Get the user that owns the News
      *
-     * @return \Illuminate\Database\Eloquent\Relations\HasOne
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
-    public function user(): HasOne
+    public function user(): BelongsTo
     {
-        return $this->hasOne(User::class);
+        return $this->belongsTo(User::class);
     }
 
     /**
@@ -35,4 +37,8 @@ class News extends Model
     // protected $casts = [
     //     'body' => 'array',
     // ];
+
+    protected $casts = [
+        'status' => NewsStatus::class,
+    ];
 }
