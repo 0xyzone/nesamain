@@ -62,7 +62,7 @@
             <div class="mt-10 flex flex-col gap-10">
                 <div class="flex justify-end">
                     <h1 class="text-3xl md:text-5xl font-bold">
-                        <span class="text-base-color">Membership </span><span>Certificates</span>
+                        <span class="text-base-color">International </span><span>Affiliation</span>
                     </h1>
                 </div>
                 <div class="flex flex-wrap gap-5">
@@ -73,6 +73,99 @@
                     <a data-fslightbox="first-lightbox" href="img/certificates/Certificate-02.jpg"><img src="img/certificates/Certificate-02.jpg" alt="" class="h-60 sm:h-72 w-auto object-scale-down" /></a>
                     <a data-fslightbox="first-lightbox" href="img/certificates/Certificate-03.jpg">
                         <img src="img/certificates/Certificate-03.jpg" alt="" class="h-60 sm:h-72 w-auto object-scale-down" /></a>
+                </div>
+            </div>
+            <div class="mt-10 flex flex-col gap-10">
+                <div class="flex justify-start">
+                    <h1 class="text-3xl md:text-5xl font-bold">
+                        <span class="text-base-color">Our </span><span>Partners</span>
+                    </h1>
+                </div>
+                <div class="grid grid-cols-auto w-full overflow-x-auto">
+                    <div class="border rounded-lg flex h-max overflow-hidden">
+                        <div class="p-4">
+                            <img src="img/certificates/Certificate-01.jpg" alt="" class="aspect-square max-w-[15rem] object-cover rounded-lg">
+                        </div>
+                        <div class="py-4 pr-4 flex flex-col justify-between">
+                            <div>
+                                <h1 class="text-base-color text-2xl font-bold">Company Name</h1>
+                                <p>test</p>
+                            </div>
+                            <div>
+                                Socials
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border rounded-lg flex h-max overflow-hidden">
+                        <div class="p-4">
+                            <img src="img/certificates/Certificate-01.jpg" alt="" class="aspect-square max-w-[15rem] object-cover rounded-lg">
+                        </div>
+                        <div class="py-4 pr-4 flex flex-col justify-between">
+                            <div>
+                                <h1 class="text-base-color text-2xl font-bold">Company Name</h1>
+                                <p>test</p>
+                            </div>
+                            <div>
+                                Socials
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border rounded-lg flex h-max overflow-hidden">
+                        <div class="p-4">
+                            <img src="img/certificates/Certificate-01.jpg" alt="" class="aspect-square max-w-[15rem] object-cover rounded-lg">
+                        </div>
+                        <div class="py-4 pr-4 flex flex-col justify-between">
+                            <div>
+                                <h1 class="text-base-color text-2xl font-bold">Company Name</h1>
+                                <p>test</p>
+                            </div>
+                            <div>
+                                Socials
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border rounded-lg flex h-max overflow-hidden">
+                        <div class="p-4">
+                            <img src="img/certificates/Certificate-01.jpg" alt="" class="aspect-square max-w-[15rem] object-cover rounded-lg">
+                        </div>
+                        <div class="py-4 pr-4 flex flex-col justify-between">
+                            <div>
+                                <h1 class="text-base-color text-2xl font-bold">Company Name</h1>
+                                <p>test</p>
+                            </div>
+                            <div>
+                                Socials
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border rounded-lg flex h-max overflow-hidden">
+                        <div class="p-4">
+                            <img src="img/certificates/Certificate-01.jpg" alt="" class="aspect-square max-w-[15rem] object-cover rounded-lg">
+                        </div>
+                        <div class="py-4 pr-4 flex flex-col justify-between">
+                            <div>
+                                <h1 class="text-base-color text-2xl font-bold">Company Name</h1>
+                                <p>test</p>
+                            </div>
+                            <div>
+                                Socials
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border rounded-lg flex h-max overflow-hidden">
+                        <div class="p-4">
+                            <img src="img/certificates/Certificate-01.jpg" alt="" class="aspect-square max-w-[15rem] object-cover rounded-lg">
+                        </div>
+                        <div class="py-4 pr-4 flex flex-col justify-between">
+                            <div>
+                                <h1 class="text-base-color text-2xl font-bold">Company Name</h1>
+                                <p>test</p>
+                            </div>
+                            <div>
+                                Socials
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

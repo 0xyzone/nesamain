@@ -25,12 +25,12 @@
                         </h1>
                         <p class="text-lg 2xl:text-2xl">Siddharth Sadak, Dallu Awas, Kathmandu, Nepal</p>
                     </div>
-                    <div class="flex flex-col text-sm">
+                    {{-- <div class="flex flex-col text-sm">
                         <h1 class="text-base-color uppercase font-semibold text-base">
                             phone
                         </h1>
                         <p class="text-lg 2xl:text-2xl">+977 985-1108629</p>
-                    </div>
+                    </div> --}}
                     <div class="flex flex-col text-sm">
                         <h1 class="text-base-color uppercase font-semibold text-base">
                             mail
