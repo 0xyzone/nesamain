@@ -126,11 +126,7 @@
                     <h1 class="text-base md:text-xl: lg:text-3xl 2xl:text-5xl uppercase font-bold text-center">
                         Are You Ready To Join?
                     </h1>
-                    <div class="text-2xl flex gap-5 mt-5">
-                        <a target="_blank" href="https://fb.gg/nepalesports" class="text-white hover:scale-125 duration-200 transform ease-in-out"><i class="fa-brands fa-facebook-f"></i></a>
-                        {{-- <a href="https://" class="text-white hover:scale-125 duration-200 transform ease-in-out"><i class="fa-brands fa-discord"></i></a> --}}
-                        <a target="_blank" href="https://instagram.com/nepalesport" class="text-white hover:scale-125 duration-200 transform ease-in-out"><i class="fa-brands fa-instagram"></i></a>
-                    </div>
+                    <x-socials></x-socials>
                 </div>
             </div>
         </div>

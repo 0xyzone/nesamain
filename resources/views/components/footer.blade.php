@@ -12,11 +12,7 @@
             {{-- <a href="{{ route('certificates.index') }}" class="{{ request()->routeIs('certificates.index') ? '!text-base-color' : '' }} hover:text-base-color transform ease-in-out duration-200">Certificates</a> --}}
         </div>
     </nav>
-    <div class="text-2xl flex gap-5">
-        <a target="_blank" href="https://fb.gg/nepalesports" class="p-1 text-white hover:scale-125 duration-200 transform ease-in-out"><i class="fa-brands fa-facebook-f"></i></a>
-        {{-- <a href="#" class="p-1 text-white hover:scale-125 duration-200 transform ease-in-out"><i class="fa-brands fa-discord"></i></a> --}}
-        <a target="_blank" href="https://instagram.com/nepalesport" class="p-1 text-white hover:scale-125 duration-200 transform ease-in-out"><i class="fa-brands fa-instagram"></i></a>
-    </div>
+    <x-socials></x-socials>
     <p class="text-sm text-gray-500 flex gap-2">
         © 2024 NESA {{--  . <a href="#" class="text-white"> Privacy Policy</a> --}}
     </p>
