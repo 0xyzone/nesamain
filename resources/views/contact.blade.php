@@ -33,7 +33,7 @@
                     </div> --}}
                     <div class="flex flex-col text-sm">
                         <h1 class="text-base-color uppercase font-semibold text-base">
-                            mail
+                            Email
                         </h1>
                         <p class="text-lg 2xl:text-2xl">info@nepalesports.org</p>
                     </div>
