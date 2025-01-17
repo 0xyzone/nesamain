@@ -75,7 +75,7 @@
                         <img src="img/certificates/Certificate-03.jpg" alt="" class="h-60 sm:h-72 w-auto object-scale-down" /></a>
                 </div>
             </div>
-            <div class="mt-10 flex flex-col gap-10">
+            {{-- <div class="mt-10 flex flex-col gap-10">
                 <div class="flex justify-start">
                     <h1 class="text-3xl md:text-5xl font-bold">
                         <span class="text-base-color">Our </span><span>Partners</span>
@@ -167,7 +167,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
 </x-app>
