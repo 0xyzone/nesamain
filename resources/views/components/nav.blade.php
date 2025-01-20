@@ -2,7 +2,7 @@
 <div class="relative py-5">
     <nav class="flex justify-between w-full bg-neutral-950 pr-2 lg:pr-4">
         <div>
-            <a href="{{ route('home') }}"><img src="{{ asset('img/NESA-logo-White.png') }}" alt="Nesa Logo" class="h-20 object-contain" /></a>
+            <a href="{{ route('home') }}"><img src="{{ asset('img/NESA-logo-White.png') }}" alt="Nesa Logo" class="h-32 object-contain" /></a>
         </div>
         <div id="navbar" class="hidden lg:flex lg:items-center">
             <div id="navbar_content" class="hidden lg:flex items-center gap-8 font-medium text-base">
