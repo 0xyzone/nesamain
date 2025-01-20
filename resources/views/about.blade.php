@@ -69,13 +69,13 @@
                         <img src="img/certificates/Certificate-03.jpg" alt="" class="h-60 sm:h-72 w-auto object-scale-down" /></a>
                 </div>
             </div>
-            <div class="mt-10 flex flex-col gap-10">
+            {{-- <div class="mt-10 flex flex-col gap-10">
                 <div class="flex justify-start">
                     <h1 class="text-3xl md:text-5xl font-bold">
                         <span class="text-base-color">Our </span><span>Partners</span>
                     </h1>
                 </div>
-                {{-- <div class="grid grid-cols-auto w-full overflow-x-auto">
+                <div class="grid grid-cols-auto w-full overflow-x-auto">
                     <div class="border rounded-lg flex h-max overflow-hidden">
                         <div class="p-4">
                             <img src="img/certificates/Certificate-01.jpg" alt="" class="aspect-square max-w-[15rem] object-cover rounded-lg">
@@ -160,8 +160,8 @@
                             </div>
                         </div>
                     </div>
-                </div> --}}
-            </div>
+                </div>
+            </div> --}}
         </div>
     </div>
 </x-app>
