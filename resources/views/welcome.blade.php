@@ -2,7 +2,7 @@
     <!-- banner  -->
     <div class="flex justify-end">
         <div class="relative h-[600px] w-[90%]">
-            <img src="{{ asset('img/nesa/nesa-03.jpg') }}" alt="Landing Banner" class="h-full w-full object-cover" />
+            <img src="{{ asset('img/nesa/nesa-01.jpg') }}" alt="Landing Banner" class="h-full w-full object-cover" />
             <div class="absolute inset-0 z-10 h-full w-full" style="
             background: linear-gradient(
                 90deg,
