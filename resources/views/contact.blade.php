@@ -1,4 +1,4 @@
-<x-app>
+<x-app :titleName="$titleName">
     <div class="mt-10">
         <div>
             <h1 class="text-4xl uppercase">we're here</h1>

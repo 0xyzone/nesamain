@@ -6,7 +6,8 @@ use App\Http\Controllers\DemoController;
 use App\Http\Controllers\MainController;
 
 Route::get('/', function () {
-    return view('welcome');
+    $titleName = "";
+    return view('welcome', compact('titleName'));
 })->name('home');
 
 Route::get('/about', [MainController::class, 'about'])->name('about.index');

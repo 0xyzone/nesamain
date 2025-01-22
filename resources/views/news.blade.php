@@ -1,4 +1,4 @@
-<x-app>
+<x-app :titleName="$titleName">
     @push('headScripts')
     <script src="mock/mock-news.js"></script>
     @endpush

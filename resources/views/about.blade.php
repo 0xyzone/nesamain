@@ -1,5 +1,4 @@
-<x-app>
-
+<x-app :titleName="$titleName">
     <div class="flex justify-end">
         <div class="relative h-[400px] w-[90%]">
             <img src="img/nesa/nesa-01.jpg" alt="About Banner" class="h-full w-full object-cover" />

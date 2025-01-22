@@ -8,19 +8,24 @@ use Illuminate\Http\Request;
 class MainController extends Controller
 {
     public function about() {
-        return view("about");
+        $titleName = "About";
+        return view("about", compact('titleName'));
     }
     public function certificates() {
-        return view("certificates");
+        $titleName = "Certificates";
+        return view("certificates", compact('titleName'));
     }
     public function contact() {
-        return view("contact");
+        $titleName = "Contact";
+        return view("contact", compact('titleName'));
     }
     public function events() {
-        return view("events");
+        $titleName = "Events";
+        return view("events", compact('titleName'));
     }
     public function news() {
         $news = News::orderBy("id","desc")->where('status', 'published')->paginate(10);
-        return view("news");
+        $titleName = "News";
+        return view("news", compact('titleName'));
     }
 }
