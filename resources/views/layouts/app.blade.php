@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nesa News Portal</title>
+    <title>Nepal Esports Association - NESA</title>
     <style>
         [x-cloak] {
             display: none !important;
@@ -11,7 +11,7 @@
 
     </style>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="shortcut icon" href="{{ asset('img/logo/light-nesa-logo.png') }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('img/logo/dark-nesa.png') }}" type="image/x-icon">
     {{-- <link rel="stylesheet" href="/public/css/output.css" /> --}}
 
     <script src="https://kit.fontawesome.com/0a09f83869.js" crossorigin="anonymous"></script>

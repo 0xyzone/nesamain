@@ -81,7 +81,7 @@
                 <img src="{{ asset('img/games/dota2.webp')}}" alt="" class="h-full w-full object-cover" loading="lazy" />
             </div>
             <div class="w-full h-[200px] sm:h-[250px] rounded-xl overflow-hidden">
-                <img src="{{ asset('img/games/valorant.webp') }}" alt="" class="h-full w-full object-cover" loading="lazy" />
+                <img src="{{ asset('img/games/pubg.jpg') }}" alt="" class="h-full w-full object-cover" loading="lazy" />
             </div>
             <div class="w-full h-[200px] sm:h-[250px] rounded-xl overflow-hidden">
                 <img src="{{ asset('img/games/mlbb.webp') }}" alt="" class="h-full w-full object-cover" loading="lazy" />

@@ -30,9 +30,9 @@ class ListNesaEvent extends Component implements HasForms, HasTable
                     ->searchable(),
                 Tables\Columns\TextColumn::make('games')
                     ->badge(),
-                Tables\Columns\TextColumn::make('prize_pool')
-                    ->numeric()
-                    ->sortable(),
+                // Tables\Columns\TextColumn::make('prize_pool')
+                //     ->numeric()
+                //     ->sortable(),
                 Tables\Columns\TextColumn::make('from_date')
                     ->date()
                     ->sortable(),

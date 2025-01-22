@@ -26,14 +26,7 @@
                 <span class="text-base-color text-5xl font-bold">N</span>epal E-sports Association (NESA) established as non- profit sharing company on May 2016 is a national level organization establish to promote Esports in Nepal. NESA is recognized as by Nepal Olympic Committee and full member of  <strong>International Esports governing bodies International Esports Federation (IESF), Global Esports Federation (GEF) and Asian Electronic Sports Federation (AESF).</strong>
                 <br />
                 <br />
-                A lot of credit goes to the President of Nepal Olympic Committee,
-                Mr. Jeeven Ram Shrestha, without whose support the NESA would still
-                be an aimless, un-organised body. His perpetual cooperation has been
-                an essential contribution in establishing NESA as an official body
-                governing e-sports activities in Nepal. The recognition from the
-                Nepal Olympic Committee helped us to gain confidence from the
-                government as well and helped us to get membership as esporting
-                nation in International Esports Federation (IESF).
+                A lot of credit goes to the President of the Nepal Olympic Committee, Mr. Jeevan Ram Shrestha. His unwavering cooperation has been instrumental in establishing NESA as the official governing body for esports activities in Nepal. Recognition from the Nepal Olympic Committee has not only boosted our confidence with the government but also facilitated our international affiliations.
             </p>
             <div class="flex justify-center">
                 <div class="max-w-5xl w-full text-center flex">
@@ -47,10 +40,7 @@
             <div class="flex flex-col gap-2">
                 <h1 class="text-base-color text-2xl">Purpose</h1>
                 <p class="text-base text-justify">
-                    Our main purpose is to act as a principal entity governing,
-                    promoting, planning, coordinating and taking full responsibility
-                    for overall success of the esports activities consistent with the
-                    rules and norms of the IESF throughout the country.
+                    The purpose of the Nepal Esports Association is to establish a thriving ecosystem for esports by promoting its growth and developing a robust grassroots esports system. This involves nurturing talent at the community level, creating opportunities for players to excel, and fostering partnerships to build a sustainable and inclusive esports environment in Nepal.
                 </p>
             </div>
             <div class="mt-10 flex flex-col gap-10">
