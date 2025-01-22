@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: 'selector',
   content: [
     "./vendor/rawilk/filament-quill/resources/css/content.css",
     "./resources/**/*.blade.php",

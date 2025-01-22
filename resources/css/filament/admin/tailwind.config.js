@@ -1,6 +1,7 @@
 import preset from "../../../../vendor/filament/filament/tailwind.config.preset";
 
 export default {
+    darkMode: 'selector',
     presets: [preset],
     content: [
         "./app/Filament/**/*.php",
