@@ -22,13 +22,14 @@ class ListNesaEvent extends Component implements HasForms, HasTable
     {
         return $table
             ->query(NesaEvent::query())
+            ->heading('Esports Events')
             ->columns([
                 Tables\Columns\ImageColumn::make('logo')
-                ->label(''),
+                    ->label(''),
                 Tables\Columns\TextColumn::make('name')
-                ->searchable(),
+                    ->searchable(),
                 Tables\Columns\TextColumn::make('games')
-                ->badge(),
+                    ->badge(),
                 Tables\Columns\TextColumn::make('prize_pool')
                     ->numeric()
                     ->sortable(),
@@ -38,14 +39,6 @@ class ListNesaEvent extends Component implements HasForms, HasTable
                 Tables\Columns\TextColumn::make('end_date')
                     ->date()
                     ->sortable(),
-                Tables\Columns\TextColumn::make('created_at')
-                    ->dateTime()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
-                Tables\Columns\TextColumn::make('updated_at')
-                    ->dateTime()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
             ])
             ->deferLoading(false)
             ->filters([
@@ -64,6 +57,6 @@ class ListNesaEvent extends Component implements HasForms, HasTable
     public function render(): View
     {
         return view('livewire.events.list-nesa-event')
-        ->layout('layouts.app');
+            ->layout('layouts.app');
     }
 }

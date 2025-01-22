@@ -27,6 +27,7 @@ class AdminPanelProvider extends PanelProvider
             ->id('admin')
             ->path('admin')
             ->viteTheme('resources/css/filament/admin/theme.css')
+            ->favicon(asset('img/logo/light-nesa-logo.png'))
             ->login()
             ->colors([
                 'primary' => Color::Amber,

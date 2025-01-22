@@ -11,6 +11,7 @@
 
     </style>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="{{ asset('img/logo/light-nesa-logo.png') }}" type="image/x-icon">
     {{-- <link rel="stylesheet" href="/public/css/output.css" /> --}}
 
     <script src="https://kit.fontawesome.com/0a09f83869.js" crossorigin="anonymous"></script>

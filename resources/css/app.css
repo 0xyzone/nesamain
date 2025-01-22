@@ -3,7 +3,6 @@
 @tailwind utilities;
 @tailwind variants;
 
-
 @layer base{
     .contact-form-input{
         @apply w-full p-2 border border-x-0 border-t-0 bg-black border-b-base-color focus:outline-none text-white text-xl;
