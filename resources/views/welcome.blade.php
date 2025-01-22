@@ -35,16 +35,16 @@
                     <div class="h-[450px] w-[360px] rounded-xl bg-white bg-opacity-25 rotate-[10deg]"></div>
                 </div>
                 <div class="h-[450px] w-[360px] rounded-xl z-20 shadow-lg shadow-[#181918]">
-                    <img src="img/nesa/nesa-05.jpg" alt="" class="h-full w-full object-cover rounded-xl" />
+                    <img src="img/nesa/nesa-05.jpg" alt="banner-1" class="h-full w-full object-cover rounded-xl" />
                 </div>
                 <div class="hidden sm:block absolute -bottom-16 -right-0 2xl:right-20 z-30">
                     <div class="h-[260px] w-[230px] rounded-xl shadow-lg shadow-[#181918]">
-                        <img src="img/nesa/nesa-09.jpg" alt="" class="h-full w-full object-cover rounded-xl" />
+                        <img src="img/nesa/nesa-09.jpg" alt="banner-2" class="h-full w-full object-cover rounded-xl" />
                     </div>
                 </div>
                 <div class="hidden sm:block absolute -bottom-2 -left-5 md:-left-10 2xl:left-10 z-30">
                     <div class="h-[260px] w-[230px] rounded-xl shadow-lg shadow-[#181918]">
-                        <img src="img/nesa/nesa-06.jpg" alt="" class="h-full w-full object-cover rounded-xl" />
+                        <img src="img/nesa/nesa-06.jpg" alt="banner-3" class="h-full w-full object-cover rounded-xl" />
                     </div>
                 </div>
             </div>
@@ -75,19 +75,19 @@
                 </div>
             </div>
             <div class="w-full h-[200px] sm:h-[250px] rounded-xl overflow-hidden">
-                <img src="{{ asset('img/games/pes.web') }}p" alt="" class="h-full w-full object-cover" loading="lazy" />
+                <img src="{{ asset('img/games/pes.web') }}p" alt="pes banner" class="h-full w-full object-cover" loading="lazy" />
             </div>
             <div class="w-full h-[200px] sm:h-[250px] rounded-xl overflow-hidden">
-                <img src="{{ asset('img/games/dota2.webp')}}" alt="" class="h-full w-full object-cover" loading="lazy" />
+                <img src="{{ asset('img/games/dota2.webp')}}" alt="dota2 banner" class="h-full w-full object-cover" loading="lazy" />
             </div>
             <div class="w-full h-[200px] sm:h-[250px] rounded-xl overflow-hidden">
-                <img src="{{ asset('img/games/pubg.jpg') }}" alt="" class="h-full w-full object-cover" loading="lazy" />
+                <img src="{{ asset('img/games/pubg.jpg') }}" alt="pubg banner" class="h-full w-full object-cover" loading="lazy" />
             </div>
             <div class="w-full h-[200px] sm:h-[250px] rounded-xl overflow-hidden">
-                <img src="{{ asset('img/games/mlbb.webp') }}" alt="" class="h-full w-full object-cover" loading="lazy" />
+                <img src="{{ asset('img/games/mlbb.webp') }}" alt="mlbb banner" class="h-full w-full object-cover" loading="lazy" />
             </div>
             <div class="w-full h-[200px] sm:h-[250px] rounded-xl overflow-hidden">
-                <img src="{{ asset('img/games/csgo.webp') }}" alt="" class="h-full w-full object-cover" loading="lazy" />
+                <img src="{{ asset('img/games/csgo.webp') }}" alt="csgo banner" class="h-full w-full object-cover" loading="lazy" />
             </div>
         </div>
     </div>
