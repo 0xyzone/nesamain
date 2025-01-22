@@ -1,5 +1,6 @@
 <?php
 
+use App\Livewire\Events\ListNesaEvent;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DemoController;
 use App\Http\Controllers\MainController;
@@ -16,3 +17,4 @@ Route::get('/contact', [MainController::class, 'contact'])->name('contact.index'
 
 Route::get('/demo/', [DemoController::class, 'index'])->name('demo.index');
 Route::get('/demo/{id}', [DemoController::class, 'show'])->name('demo.show');
+Route::get('/eventTable', ListNesaEvent::class);

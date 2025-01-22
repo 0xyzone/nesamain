@@ -1,4 +1,7 @@
 <x-app>
+    @push('headScripts')
+    <script src="mock/mock-news.js"></script>
+    @endpush
     <div class="relative mt-10">
         <div class="grid grid-cols-1 xl:grid-cols-3 gap-5">
             <div class="col-span-2 relative flex flex-col gap-5">
@@ -75,68 +78,100 @@
         </div>
     </div>
 
-    <script>
-        const external_news_container = document.getElementById(
-            "external-news-container"
-        );
-        const externalNewsDivs = mock_news
-            .filter((news) => news.type === "external")
-            .slice(0, 3)
-            .map(
-                (news) => `
-         <a href="/news-description.html" class="group relative">
-              <div
-                class="h-[250px] xl:h-[300px] w-full rounded-xl relative overflow-hidden hover:shadow-sm "
-              >
-                <img
-                  src="img/news/news-card.jpg"
-                  alt=""
-                  class="h-full w-full object-cover group-hover:scale-105 transform duration-300 ease-in-out"
-                />
-              </div>
-              <div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 to-black bg-opacity-50 p-5">
-                <div class="flex flex-col h-full justify-end font-semibold">
-                  <p class="text-sm flex gap-2">
-                    <span class="flex items-center gap-2 text-gray-200"><ion-icon name="calendar-outline" class="text-base-color"></ion-icon>May 15, 2024</span>
-                    <span> | </span>
-                    <span class="flex items-center gap-2 text-gray-200"><ion-icon name="person-outline" class="text-base-color"></ion-icon>NESA</span>
-                  </p>
-                  <h1 class="text-base 2xl:text-xl font-bold flex flex-wrap">${news.title}</h1>
-                </div>
-              </div>
-            </a>
-    `
+    @push ('scripts') 
+        <script>
+            const external_news_container = document.getElementById(
+                "external-news-container"
             );
-        external_news_container.innerHTML = externalNewsDivs.join("");
-
-    </script>
-
-    <script>
-        const recent_news_container = document.getElementById(
-            "recent-news-container"
-        );
-        const recentNewsDivs = mock_news.slice(0, 6).map(
-            (news) => `
-     <a href="#" class="h-full grid grid-cols-3 sm:grid-cols-4 md:grid-cols-2 xl:grid-cols-3 gap-2 border-solid border-2 border-transparent hover:border-gray-900 transform duration-100 ease-in-out p-1">
-                  <div class="col-span-1 h-24 w-auto rounded-md overflow-hidden">
-                    <img
-                      src="img/news/news-card.jpg"
-                      alt=""
-                      class="h-24 w-full object-cover"
-                    />
-                  </div>
-                  <div class="col-span-2 sm:col-span-3 md:col-span-2 flex flex-col gap-1">
-                    <h1 class="text-sm 2xl:text-base font-semibold flex flex-wrap ">
-                      ${news.title}
-                    </h1>
-                    <h6 class="text-sm font-medium text-gray-600">
-                      June 21, 2023
-                    </h6>
-                  </div>
-                </a>
-    `
-        );
-        recent_news_container.innerHTML = recentNewsDivs.join("");
-
-    </script>
+            const externalNewsDivs = mock_news
+                .filter((news) => news.type === "external")
+                .slice(0, 3)
+                .map(
+                    (news) => `
+                                <a href="/news-description.html" class="group relative">
+                                    <div
+                                        class="h-[250px] xl:h-[300px] w-full rounded-xl relative overflow-hidden hover:shadow-sm "
+                                    >
+                                        <img
+                                        src="img/news/news-card.jpg"
+                                        alt=""
+                                        class="h-full w-full object-cover group-hover:scale-105 transform duration-300 ease-in-out"
+                                        />
+                                    </div>
+                                    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 to-black bg-opacity-50 p-5">
+                                        <div class="flex flex-col h-full justify-end font-semibold">
+                                        <p class="text-sm flex gap-2">
+                                            <span class="flex items-center gap-2 text-gray-200"><ion-icon name="calendar-outline" class="text-base-color"></ion-icon>May 15, 2024</span>
+                                            <span> | </span>
+                                            <span class="flex items-center gap-2 text-gray-200"><ion-icon name="person-outline" class="text-base-color"></ion-icon>NESA</span>
+                                        </p>
+                                        <h1 class="text-base 2xl:text-xl font-bold flex flex-wrap">${news.title}</h1>
+                                        </div>
+                                    </div>
+                                </a>
+                            `
+                );
+            external_news_container.innerHTML = externalNewsDivs.join("");
+    
+        </script>
+    
+        <script>
+            const recent_news_container = document.getElementById(
+                "recent-news-container"
+            );
+            const recentNewsDivs = mock_news.slice(0, 6).map(
+                (news) => `
+                                <a href="#" class="h-full grid grid-cols-3 sm:grid-cols-4 md:grid-cols-2 xl:grid-cols-3 gap-2 border-solid border-2 border-transparent hover:border-gray-900 transform duration-100 ease-in-out p-1">
+                                    <div class="col-span-1 h-24 w-auto rounded-md overflow-hidden">
+                                        <img
+                                        src="img/news/news-card.jpg"
+                                        alt=""
+                                        class="h-24 w-full object-cover"
+                                        />
+                                    </div>
+                                    <div class="col-span-2 sm:col-span-3 md:col-span-2 flex flex-col gap-1">
+                                        <h1 class="text-sm 2xl:text-base font-semibold flex flex-wrap ">
+                                        ${news.title}
+                                        </h1>
+                                        <h6 class="text-sm font-medium text-gray-600">
+                                        June 21, 2023
+                                        </h6>
+                                    </div>
+                                </a>
+                            `
+            );
+            recent_news_container.innerHTML = recentNewsDivs.join("");
+        </script>
+    
+        <script>
+            const news_container = document.getElementById("news-container");
+            const newsDivs = mock_news.slice(0, 3).map(
+                (news) => `
+                            <a href="/news-description.html" class="group relative">
+                                <div
+                                    class="h-[250px] xl:h-[300px] w-full rounded-xl relative overflow-hidden hover:shadow-sm "
+                                >
+                                    <img
+                                    src="storage/images/news/news-card.jpg"
+                                    alt=""
+                                    class="h-full w-full object-cover group-hover:scale-105 transform duration-300 ease-in-out"
+                                    />
+                                </div>
+                                <div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 to-black bg-opacity-50 p-5">
+                                    <div class="flex flex-col h-full justify-end font-semibold">
+                                    <p class="text-sm flex gap-2">
+                                        <span class="flex items-center gap-2 text-gray-200"><ion-icon name="calendar-outline" class="text-base-color"></ion-icon>May 15, 2024</span>
+                                        <span> | </span>
+                                        <span class="flex items-center gap-2 text-gray-200"><ion-icon name="person-outline" class="text-base-color"></ion-icon>NESA</span>
+                                    </p>
+                                    <h1 class="text-base 2xl:text-xl font-bold flex flex-wrap">${news.title}</h1>
+                                    </div>
+                                </div>
+                            </a>
+                        `
+            );
+            news_container.innerHTML = newsDivs.join("");
+    
+        </script>
+    @endpush
 </x-app>

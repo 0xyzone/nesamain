@@ -1,3 +1,3 @@
 <x-app>
-    Coming Soon!
+    @livewire('events.list-nesa-event')
 </x-app>

@@ -56,9 +56,8 @@ class NesaEventResource extends Resource
     {
         return $table
             ->columns([
+                Tables\Columns\ImageColumn::make('logo'),
                 Tables\Columns\TextColumn::make('name')
-                    ->searchable(),
-                Tables\Columns\ImageColumn::make('logo')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('games')
                 ->badge(),

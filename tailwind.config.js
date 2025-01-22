@@ -4,6 +4,7 @@ export default {
     "./vendor/rawilk/filament-quill/resources/css/content.css",
     "./resources/**/*.blade.php",
     "./resources/**/*.js",
+    "./vendor/filament/**/*.blade.php",
   ],
   // In some cases, it is necessary to safelist the root element selector so tailwind
   // doesn't purge everything.
