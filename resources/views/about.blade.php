@@ -22,7 +22,7 @@
     <div class="mt-20">
         <div class="flex flex-col gap-10">
             <p id="about-content" class="text-base text-justify">
-                <span class="text-base-color text-5xl font-bold">N</span>epal E-sports Association (NESA) established as non- profit sharing company on May 2016 is a national level organization establish to promote Esports in Nepal. NESA is recognized as by Nepal Olympic Committee and full member of  <strong>International Esports governing bodies International Esports Federation (IESF), Global Esports Federation (GEF) and Asian Electronic Sports Federation (AESF).</strong>
+                <span class="text-base-color text-5xl font-bold">N</span>epal Esports Association (NESA) established as non- profit sharing company on May 2016 is a national level organization establish to promote Esports in Nepal. NESA is recognized as by Nepal Olympic Committee and full member of  <strong>International Esports governing bodies International Esports Federation (IESF), Global Esports Federation (GEF) and Asian Electronic Sports Federation (AESF).</strong>
                 <br />
                 <br />
                 A lot of credit goes to the President of the Nepal Olympic Committee, Mr. Jeevan Ram Shrestha. His unwavering cooperation has been instrumental in establishing NESA as the official governing body for esports activities in Nepal. Recognition from the Nepal Olympic Committee has not only boosted our confidence with the government but also facilitated our international affiliations.
