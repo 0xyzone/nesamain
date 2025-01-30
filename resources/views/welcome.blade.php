@@ -52,7 +52,7 @@
                 <h1 class="text-sm text-base-color font-bold">ABOUT US</h1>
                 <h1 class="text-2xl">Rise of Nepal Esports</h1>
                 <p class="text-justify text-gray-400">
-                    Nepal E-sports Association (NESA) established as non- profit sharing company on May 2016 is a national level organization establish to promote Esports in Nepal. NESA is recognized as by Nepal Olympic Committee and full member of  <strong>International Esports governing bodies International Esports Federation (IESF), Global Esports Federation (GEF) and Asian Electronic Sports Federation (AESF).</strong>
+                    Nepal Esports Association (NESA) established as non- profit sharing company on May 2016 is a national level organization establish to promote Esports in Nepal. NESA is recognized as by Nepal Olympic Committee and full member of  <strong>International Esports governing bodies International Esports Federation (IESF), Global Esports Federation (GEF) and Asian Electronic Sports Federation (AESF).</strong>
                 </p>
                 <a href="{{ route('about.index') }}" class="button-styled">About Us</a>
             </div>
