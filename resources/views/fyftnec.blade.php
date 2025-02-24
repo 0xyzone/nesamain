@@ -57,41 +57,92 @@
         </div>
     </div>
 
+    <!-- join us -->
+    <div class="mt-10">
+        <div class="relative h-[50vh] w-full rounded-2xl overflow-hidden">
+            <img src="{{ asset('img/nesa/nesa-03.jpg') }}" alt="Join Us" class="h-full w-full object-cover" />
+            <div class="absolute inset-0 h-full w-full bg-background bg-opacity-50">
+                <div class="h-full w-full flex flex-col gap-2 items-center justify-center">
+                    <h1 class="text-base md:text-xl lg:text-3xl 2xl:text-5xl uppercase font-bold text-center">
+                        Are You Ready to Compete?
+                    </h1>
+                    <a href="#" class="button-styled">Register Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- sponsors section -->
     <div class="mt-20">
-        <h1 class="text-sm text-base-color font-bold text-center">OUR SPONSORS</h1>
+        <h1 class="text-sm lg:text-6xl text-base-color font-bold text-center">OUR PARTNERS</h1>
         <div class="slider">
             <div class="slide-track">
                 <div class="slide">
-                    <img src="{{ asset('img/sponsors/sponsor1.png') }}" alt="Sponsor 1" />
+                    <img src="{{ asset('img/sponsors/1.png') }}" alt="Sponsor 1" />
                 </div>
                 <div class="slide">
-                    <img src="{{ asset('img/sponsors/sponsor2.png') }}" alt="Sponsor 2" />
+                    <img src="{{ asset('img/sponsors/2.png') }}" alt="Sponsor 2" />
                 </div>
                 <div class="slide">
-                    <img src="{{ asset('img/sponsors/sponsor3.png') }}" alt="Sponsor 3" />
+                    <img src="{{ asset('img/sponsors/3.png') }}" alt="Sponsor 3" />
                 </div>
                 <div class="slide">
-                    <img src="{{ asset('img/sponsors/sponsor4.png') }}" alt="Sponsor 4" />
+                    <img src="{{ asset('img/sponsors/4.png') }}" alt="Sponsor 4" />
                 </div>
                 <div class="slide">
-                    <img src="{{ asset('img/sponsors/sponsor5.png') }}" alt="Sponsor 5" />
+                    <img src="{{ asset('img/sponsors/5.png') }}" alt="Sponsor 5" />
+                </div>
+                <div class="slide">
+                    <img src="{{ asset('img/sponsors/6.png') }}" alt="Sponsor 5" />
+                </div>
+                <div class="slide">
+                    <img src="{{ asset('img/sponsors/7.png') }}" alt="Sponsor 5" />
+                </div>
+                <div class="slide">
+                    <img src="{{ asset('img/sponsors/8.png') }}" alt="Sponsor 5" />
+                </div>
+                <div class="slide">
+                    <img src="{{ asset('img/sponsors/9.png') }}" alt="Sponsor 5" />
+                </div>
+                <div class="slide">
+                    <img src="{{ asset('img/sponsors/10.png') }}" alt="Sponsor 5" />
+                </div>
+                <div class="slide">
+                    <img src="{{ asset('img/sponsors/11.png') }}" alt="Sponsor 5" />
                 </div>
                 <!-- Duplicate slides for seamless scrolling -->
                 <div class="slide">
-                    <img src="{{ asset('img/sponsors/sponsor1.png') }}" alt="Sponsor 1" />
+                    <img src="{{ asset('img/sponsors/1.png') }}" alt="Sponsor 1" />
                 </div>
                 <div class="slide">
-                    <img src="{{ asset('img/sponsors/sponsor2.png') }}" alt="Sponsor 2" />
+                    <img src="{{ asset('img/sponsors/2.png') }}" alt="Sponsor 2" />
                 </div>
                 <div class="slide">
-                    <img src="{{ asset('img/sponsors/sponsor3.png') }}" alt="Sponsor 3" />
+                    <img src="{{ asset('img/sponsors/3.png') }}" alt="Sponsor 3" />
                 </div>
                 <div class="slide">
-                    <img src="{{ asset('img/sponsors/sponsor4.png') }}" alt="Sponsor 4" />
+                    <img src="{{ asset('img/sponsors/4.png') }}" alt="Sponsor 4" />
                 </div>
                 <div class="slide">
-                    <img src="{{ asset('img/sponsors/sponsor5.png') }}" alt="Sponsor 5" />
+                    <img src="{{ asset('img/sponsors/5.png') }}" alt="Sponsor 5" />
+                </div>
+                <div class="slide">
+                    <img src="{{ asset('img/sponsors/6.png') }}" alt="Sponsor 5" />
+                </div>
+                <div class="slide">
+                    <img src="{{ asset('img/sponsors/7.png') }}" alt="Sponsor 5" />
+                </div>
+                <div class="slide">
+                    <img src="{{ asset('img/sponsors/8.png') }}" alt="Sponsor 5" />
+                </div>
+                <div class="slide">
+                    <img src="{{ asset('img/sponsors/9.png') }}" alt="Sponsor 5" />
+                </div>
+                <div class="slide">
+                    <img src="{{ asset('img/sponsors/10.png') }}" alt="Sponsor 5" />
+                </div>
+                <div class="slide">
+                    <img src="{{ asset('img/sponsors/11.png') }}" alt="Sponsor 5" />
                 </div>
             </div>
         </div>
@@ -100,7 +151,7 @@
         .slider {
             overflow: hidden;
             position: relative;
-            background: #efeef2;
+            /* background: #efeef2; */
         }
 
         .slide-track {
@@ -134,19 +185,4 @@
         }
 
     </style>
-
-    <!-- join us -->
-    <div class="mt-10">
-        <div class="relative h-[50vh] w-full rounded-2xl overflow-hidden">
-            <img src="{{ asset('img/nesa/nesa-03.jpg') }}" alt="Join Us" class="h-full w-full object-cover" />
-            <div class="absolute inset-0 h-full w-full bg-background bg-opacity-50">
-                <div class="h-full w-full flex flex-col gap-2 items-center justify-center">
-                    <h1 class="text-base md:text-xl lg:text-3xl 2xl:text-5xl uppercase font-bold text-center">
-                        Are You Ready to Compete?
-                    </h1>
-                    <a href="#" class="button-styled">Register Now</a>
-                </div>
-            </div>
-        </div>
-    </div>
 </x-app>
