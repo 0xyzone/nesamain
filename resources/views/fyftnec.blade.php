@@ -83,6 +83,9 @@
                 <iframe width="100%" height="200" src="https://www.youtube.com/embed/0pNguxxLGnA" title="2nd Nepal Esports Championship" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="video-container">
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/fhkm3OWrFFE" title="3rd Nepal Esports Championship" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
                 <iframe width="100%" height="200" src="https://www.youtube.com/embed/BW-5aHq4ESc" title="4th Nepal Esports Championship" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
