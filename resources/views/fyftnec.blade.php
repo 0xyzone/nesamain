@@ -71,6 +71,22 @@
             </div>
         </div>
     </div>
+    <!-- past events section -->
+    <div class="mt-20">
+        <h1 class="text-sm text-base-color font-bold text-center">PAST EVENTS</h1>
+        <h2 class="text-2xl text-center">Watch Our Previous Championships</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-5">
+            <div class="video-container">
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/Y1qkMPV5XkY" title="1st Nepal Esports Championship" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/0pNguxxLGnA" title="2nd Nepal Esports Championship" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/BW-5aHq4ESc" title="4th Nepal Esports Championship" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
 
     <!-- sponsors section -->
     <div class="mt-20">
@@ -182,6 +198,14 @@
                 transform: translateX(-50%);
                 /* Adjust based on the number of logos */
             }
+        }
+
+        .video-container {
+            overflow: hidden;
+            border-radius: 8px;
+            /* Optional: for rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            /* Optional: for shadow effect */
         }
 
     </style>
