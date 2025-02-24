@@ -12,6 +12,7 @@
                 {{-- 
                 <a href="{{ route('news.index') }}" class="{{ request()->routeIs('news.index') ? '!text-base-color' : '' }} hover:text-base-color transform ease-in-out duration-200">News</a> --}}
                 <a href="{{ route('contact.index') }}" class="{{ request()->routeIs('contact.index') ? '!text-base-color' : '' }} hover:text-base-color transform ease-in-out duration-200">Contact Us</a>
+                <a href="{{ route('fyft') }}" class="{{ request()->routeIs('fyft') ? '!text-base-color' : '' }} hover:text-base-color transform ease-in-out duration-200">5th NEC</a>
                 {{-- <a href="{{ route('certificates.index') }}" class="{{ request()->routeIs('certificates.index') ? '!text-base-color' : '' }} hover:text-base-color transform ease-in-out duration-200">Certificates</a> --}}
                 <ion-icon name="close" id="close-mobile-nav" class="lg:hidden cursor-pointer text-3xl hover:scale-105 transform ease-in-out duration-300 bg-transparent text-white border-0"></ion-icon>
             </div>

@@ -20,4 +20,4 @@ Route::get('/demo/', [DemoController::class, 'index'])->name('demo.index');
 Route::get('/demo/{id}', [DemoController::class, 'show'])->name('demo.show');
 Route::get('/eventTable', ListNesaEvent::class);
 
-Route::view('fyft', 'fyftnec');
+Route::view('fifth-nec', 'fyftnec')->name('fyft');

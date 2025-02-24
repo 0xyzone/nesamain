@@ -2,7 +2,7 @@
     <!-- banner  -->
     <div class="flex justify-end">
         <div class="relative h-[600px] w-[90%]">
-            <img src="{{ asset('img/nesa/nesa-02.jpg') }}" alt="5th Nepal Esports Championship & Expo 2025" class="h-full w-full object-cover" />
+            <img src="{{ asset('img/nesa/nesa-05.jpg') }}" alt="5th Nepal Esports Championship & Expo 2025" class="h-full w-full object-cover" />
             <div class="absolute inset-0 z-10 h-full w-full" style="
             background: linear-gradient(
                 90deg,
@@ -90,119 +90,7 @@
             </div>
         </div>
     </div>
-
-    <!-- sponsors section -->
-    <div class="mt-20">
-        <h1 class="text-sm lg:text-6xl text-base-color font-bold text-center">OUR PARTNERS</h1>
-        <div class="slider">
-            <div class="slide-track">
-                <div class="slide">
-                    <img src="{{ asset('img/sponsors/1.png') }}" alt="Sponsor 1" />
-                </div>
-                <div class="slide">
-                    <img src="{{ asset('img/sponsors/2.png') }}" alt="Sponsor 2" />
-                </div>
-                <div class="slide">
-                    <img src="{{ asset('img/sponsors/3.png') }}" alt="Sponsor 3" />
-                </div>
-                <div class="slide">
-                    <img src="{{ asset('img/sponsors/4.png') }}" alt="Sponsor 4" />
-                </div>
-                <div class="slide">
-                    <img src="{{ asset('img/sponsors/5.png') }}" alt="Sponsor 5" />
-                </div>
-                <div class="slide">
-                    <img src="{{ asset('img/sponsors/6.png') }}" alt="Sponsor 5" />
-                </div>
-                <div class="slide">
-                    <img src="{{ asset('img/sponsors/7.png') }}" alt="Sponsor 5" />
-                </div>
-                <div class="slide">
-                    <img src="{{ asset('img/sponsors/8.png') }}" alt="Sponsor 5" />
-                </div>
-                <div class="slide">
-                    <img src="{{ asset('img/sponsors/9.png') }}" alt="Sponsor 5" />
-                </div>
-                <div class="slide">
-                    <img src="{{ asset('img/sponsors/10.png') }}" alt="Sponsor 5" />
-                </div>
-                <div class="slide">
-                    <img src="{{ asset('img/sponsors/11.png') }}" alt="Sponsor 5" />
-                </div>
-                <!-- Duplicate slides for seamless scrolling -->
-                <div class="slide">
-                    <img src="{{ asset('img/sponsors/1.png') }}" alt="Sponsor 1" />
-                </div>
-                <div class="slide">
-                    <img src="{{ asset('img/sponsors/2.png') }}" alt="Sponsor 2" />
-                </div>
-                <div class="slide">
-                    <img src="{{ asset('img/sponsors/3.png') }}" alt="Sponsor 3" />
-                </div>
-                <div class="slide">
-                    <img src="{{ asset('img/sponsors/4.png') }}" alt="Sponsor 4" />
-                </div>
-                <div class="slide">
-                    <img src="{{ asset('img/sponsors/5.png') }}" alt="Sponsor 5" />
-                </div>
-                <div class="slide">
-                    <img src="{{ asset('img/sponsors/6.png') }}" alt="Sponsor 5" />
-                </div>
-                <div class="slide">
-                    <img src="{{ asset('img/sponsors/7.png') }}" alt="Sponsor 5" />
-                </div>
-                <div class="slide">
-                    <img src="{{ asset('img/sponsors/8.png') }}" alt="Sponsor 5" />
-                </div>
-                <div class="slide">
-                    <img src="{{ asset('img/sponsors/9.png') }}" alt="Sponsor 5" />
-                </div>
-                <div class="slide">
-                    <img src="{{ asset('img/sponsors/10.png') }}" alt="Sponsor 5" />
-                </div>
-                <div class="slide">
-                    <img src="{{ asset('img/sponsors/11.png') }}" alt="Sponsor 5" />
-                </div>
-            </div>
-        </div>
-    </div>
     <style>
-        .slider {
-            overflow: hidden;
-            position: relative;
-            /* background: #efeef2; */
-        }
-
-        .slide-track {
-            display: flex;
-            animation: scroll 20s linear infinite;
-        }
-
-        .slide {
-            min-width: 200px;
-            /* Adjust based on your logo size */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .slide img {
-            width: 100%;
-            /* Adjust as needed */
-            height: auto;
-        }
-
-        @keyframes scroll {
-            0% {
-                transform: translateX(0);
-            }
-
-            100% {
-                transform: translateX(-50%);
-                /* Adjust based on the number of logos */
-            }
-        }
-
         .video-container {
             overflow: hidden;
             border-radius: 8px;
@@ -212,4 +100,120 @@
         }
 
     </style>
+
+    <!-- sponsors section -->
+    <div class="mt-20">
+        <h1 class="text-sm lg:text-6xl text-base-color font-bold text-center mb-8">OUR PARTNERS</h1>
+
+        <!-- Carousel Container -->
+        <div class="relative overflow-hidden group">
+            <!-- Draggable and Auto-Scrolling Slider -->
+            <div id="sponsor-track" class="slide-track flex gap-8 py-4 cursor-grab active:cursor-grabbing overflow-x-auto scrollbar-hide" onmousedown="handleMouseDown(event)" ontouchstart="handleMouseDown(event)">
+                <!-- Duplicate slides for seamless loop -->
+                @for($i = 0; $i < 2; $i++) <!-- Run twice for infinite loop -->
+                    @foreach(range(1, 12) as $num)
+                    <div class="slide min-w-[150px] md:min-w-[200px] flex items-center">
+                        <img src="{{ asset('img/sponsors/'.$num.'.png') }}" alt="Sponsor {{ $num }}" class="w-full h-auto object-contain max-h-[250px] grayscale hover:grayscale-0 transition-all duration-300" />
+                    </div>
+                    @endforeach
+                    @endfor
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+
+        .slide-track {
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+            user-select: none;
+            width: max-content;
+        }
+
+        @keyframes auto-scroll {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(calc(-100% / 2));
+            }
+
+            /* Move half the duplicated content */
+        }
+
+        .slide-track.auto-scroll {
+            animation: auto-scroll 40s linear infinite;
+        }
+
+        .slide-track.dragging {
+            animation-play-state: paused;
+        }
+
+    </style>
+
+    @push ('scripts') 
+        <script>
+            let isDown = false;
+            let startX;
+            let scrollLeft;
+            const track = document.getElementById('sponsor-track');
+    
+            // Enable auto-scroll by default
+            track.classList.add('auto-scroll');
+    
+            // Drag-to-scroll functionality
+            function handleMouseDown(e) {
+                isDown = true;
+                track.classList.add('dragging');
+                startX = (e.pageX || e.touches[0].pageX) - track.offsetLeft;
+                scrollLeft = track.scrollLeft;
+            }
+    
+            function handleMouseLeave() {
+                isDown = false;
+                track.classList.remove('dragging');
+            }
+    
+            function handleMouseUp() {
+                isDown = false;
+                track.classList.remove('dragging');
+            }
+    
+            function handleMouseMove(e) {
+                if (!isDown) return;
+                e.preventDefault();
+                const x = (e.pageX || e.touches[0].pageX) - track.offsetLeft;
+                const walk = (x - startX) * 2; // Adjust scroll speed
+                track.scrollLeft = scrollLeft - walk;
+            }
+    
+            // Event listeners
+            track.addEventListener('mousedown', handleMouseDown);
+            track.addEventListener('touchstart', handleMouseDown);
+    
+            track.addEventListener('mouseleave', handleMouseLeave);
+            track.addEventListener('mouseup', handleMouseUp);
+            track.addEventListener('touchend', handleMouseUp);
+    
+            track.addEventListener('mousemove', handleMouseMove);
+            track.addEventListener('touchmove', handleMouseMove);
+    
+            // Reset auto-scroll after user interaction
+            track.addEventListener('scroll', () => {
+                if (!isDown) {
+                    track.classList.add('auto-scroll');
+                }
+            });
+    
+        </script>
+    @endpush
 </x-app>

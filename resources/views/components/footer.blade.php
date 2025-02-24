@@ -9,6 +9,7 @@
             {{-- 
             <a href="{{ route('news.index') }}" class="{{ request()->routeIs('news.index') ? '!text-base-color' : '' }} hover:text-base-color transform ease-in-out duration-200">News</a> --}}
             <a href="{{ route('contact.index') }}" class="{{ request()->routeIs('contact.index') ? '!text-base-color' : '' }} hover:text-base-color transform ease-in-out duration-200">Contact Us</a>
+            <a href="{{ route('fyft') }}" class="{{ request()->routeIs('fyft') ? '!text-base-color' : '' }} hover:text-base-color transform ease-in-out duration-200">5th NEC</a>
             {{-- <a href="{{ route('certificates.index') }}" class="{{ request()->routeIs('certificates.index') ? '!text-base-color' : '' }} hover:text-base-color transform ease-in-out duration-200">Certificates</a> --}}
         </div>
     </nav>
