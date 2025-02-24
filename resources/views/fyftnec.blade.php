@@ -57,6 +57,84 @@
         </div>
     </div>
 
+    <!-- sponsors section -->
+    <div class="mt-20">
+        <h1 class="text-sm text-base-color font-bold text-center">OUR SPONSORS</h1>
+        <div class="slider">
+            <div class="slide-track">
+                <div class="slide">
+                    <img src="{{ asset('img/sponsors/sponsor1.png') }}" alt="Sponsor 1" />
+                </div>
+                <div class="slide">
+                    <img src="{{ asset('img/sponsors/sponsor2.png') }}" alt="Sponsor 2" />
+                </div>
+                <div class="slide">
+                    <img src="{{ asset('img/sponsors/sponsor3.png') }}" alt="Sponsor 3" />
+                </div>
+                <div class="slide">
+                    <img src="{{ asset('img/sponsors/sponsor4.png') }}" alt="Sponsor 4" />
+                </div>
+                <div class="slide">
+                    <img src="{{ asset('img/sponsors/sponsor5.png') }}" alt="Sponsor 5" />
+                </div>
+                <!-- Duplicate slides for seamless scrolling -->
+                <div class="slide">
+                    <img src="{{ asset('img/sponsors/sponsor1.png') }}" alt="Sponsor 1" />
+                </div>
+                <div class="slide">
+                    <img src="{{ asset('img/sponsors/sponsor2.png') }}" alt="Sponsor 2" />
+                </div>
+                <div class="slide">
+                    <img src="{{ asset('img/sponsors/sponsor3.png') }}" alt="Sponsor 3" />
+                </div>
+                <div class="slide">
+                    <img src="{{ asset('img/sponsors/sponsor4.png') }}" alt="Sponsor 4" />
+                </div>
+                <div class="slide">
+                    <img src="{{ asset('img/sponsors/sponsor5.png') }}" alt="Sponsor 5" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        .slider {
+            overflow: hidden;
+            position: relative;
+            background: #efeef2;
+        }
+
+        .slide-track {
+            display: flex;
+            animation: scroll 20s linear infinite;
+        }
+
+        .slide {
+            min-width: 200px;
+            /* Adjust based on your logo size */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .slide img {
+            width: 100%;
+            /* Adjust as needed */
+            height: auto;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+                /* Adjust based on the number of logos */
+            }
+        }
+
+    </style>
+
     <!-- join us -->
     <div class="mt-10">
         <div class="relative h-[50vh] w-full rounded-2xl overflow-hidden">

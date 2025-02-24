@@ -25,6 +25,19 @@
     @stack('headScripts')
     @filamentStyles
     @vite(['resources/css/app.css'])
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FDKB4F1775"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-FDKB4F1775');
+
+    </script>
 </head>
 <body class="font-open-sans">
     <div class="relative px-10 md:px-20 xl:px-32 pb-5 min-w-screen w-full min-h-svh h-full text-white bg-background">
