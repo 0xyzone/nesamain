@@ -68,12 +68,15 @@
                     </h1>
                     <div class="flex flex-col lg:flex-row gap-2 items-center">
                         <a target="_blank" href="https://meroticket.com/tournament-registration" class="button-styled">Register Now</a>
-                        <a target="_blank" href="https://dsc.gg/fyftnec" class="button-styled-discord flex gap-2 items-center"><x-fab-discord class="w-6 h-6" />Join discord</a>
+                        <a target="_blank" href="https://dsc.gg/fyftnec" class="button-styled-discord flex gap-2 items-center">
+                            <x-fab-discord class="w-6 h-6" />Join discord</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+
     <!-- past events section -->
     <div class="mt-20">
         <h1 class="text-sm text-base-color font-bold text-center">PAST EVENTS</h1>
@@ -103,6 +106,86 @@
         }
 
     </style>
+
+    <!-- Sponsorship Opportunity -->
+    <div class="mt-20">
+        <div class="relative h-[50vh] w-full rounded-2xl overflow-hidden">
+            <img src="{{ asset('img/nesa/nesa-04.jpg') }}" alt="Sponsorship Opportunity" class="h-full w-full object-cover" />
+            <div class="absolute inset-0 h-full w-full bg-background bg-opacity-50">
+                <div class="h-full w-full flex flex-col gap-2 items-center justify-center">
+                    <h1 class="text-base md:text-xl lg:text-3xl 2xl:text-5xl uppercase font-bold text-center">
+                        Sponsorship Opportunities Available
+                    </h1>
+                    <button onclick="showContactModal()" class="button-styled mt-4">Contact Us</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="fixed hidden inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
+        <div class="bg-white rounded-lg p-8 max-w-2xl w-full relative">
+            <button onclick="hideContactModal()" class="absolute top-4 right-4 text-gray-600 hover:text-gray-800">
+                &times;
+            </button>
+            <h2 class="text-2xl font-bold mb-6 text-base-color">Contact Sponsorship Team</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <div class="space-y-2">
+                        <p class="font-medium text-gray-800">Contact Persons:</p>
+                        <p class="text-gray-600">
+                            <strong>Sliu Shrestha</strong><br>
+                            Email: <a href="mailto:miceintl.np@gmail.com" class="text-blue-600">miceintl.np@gmail.com</a><br>
+                            Phone: <a href="tel:98510145661" class="text-blue-600">98510145661</a>
+                        </p>
+                        <p class="text-gray-600">
+                            <strong>Saurav Bikram Pant</strong><br>
+                            Email: <a href="mailto:saurav@kailaasa-advert.com" class="text-blue-600">saurav@kailaasa-advert.com</a><br>
+                            Phone: <a href="tel:9849249331" class="text-blue-600">9849249331</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="md:border-l md:pl-8">
+                    <ul class="space-y-2 text-gray-600">
+                        <li><a href="https://www.flipbookpdf.net/web/site/47fb22f30916694b1ffa1dcc6ab2cfaf41216b53202502.pdf.html" target="_blank" class="button-styled">Sponsorship Proposal</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @push('scripts')
+    <script>
+        function showContactModal() {
+            document.getElementById('contactModal').classList.remove('hidden');
+        }
+
+        function hideContactModal() {
+            document.getElementById('contactModal').classList.add('hidden');
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modal = document.getElementById('contactModal');
+            if (event.target == modal) {
+                hideContactModal();
+            }
+        }
+
+    </script>
+    <style>
+
+        .button-styled:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        #contactModal a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+    @endpush
 
     <!-- sponsors section -->
     <div class="mt-20">
@@ -163,60 +246,60 @@
 
     </style>
 
-    @push ('scripts') 
-        <script>
-            let isDown = false;
-            let startX;
-            let scrollLeft;
-            const track = document.getElementById('sponsor-track');
-    
-            // Enable auto-scroll by default
-            track.classList.add('auto-scroll');
-    
-            // Drag-to-scroll functionality
-            function handleMouseDown(e) {
-                isDown = true;
-                track.classList.add('dragging');
-                startX = (e.pageX || e.touches[0].pageX) - track.offsetLeft;
-                scrollLeft = track.scrollLeft;
+    @push ('scripts')
+    <script>
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+        const track = document.getElementById('sponsor-track');
+
+        // Enable auto-scroll by default
+        track.classList.add('auto-scroll');
+
+        // Drag-to-scroll functionality
+        function handleMouseDown(e) {
+            isDown = true;
+            track.classList.add('dragging');
+            startX = (e.pageX || e.touches[0].pageX) - track.offsetLeft;
+            scrollLeft = track.scrollLeft;
+        }
+
+        function handleMouseLeave() {
+            isDown = false;
+            track.classList.remove('dragging');
+        }
+
+        function handleMouseUp() {
+            isDown = false;
+            track.classList.remove('dragging');
+        }
+
+        function handleMouseMove(e) {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = (e.pageX || e.touches[0].pageX) - track.offsetLeft;
+            const walk = (x - startX) * 2; // Adjust scroll speed
+            track.scrollLeft = scrollLeft - walk;
+        }
+
+        // Event listeners
+        track.addEventListener('mousedown', handleMouseDown);
+        track.addEventListener('touchstart', handleMouseDown);
+
+        track.addEventListener('mouseleave', handleMouseLeave);
+        track.addEventListener('mouseup', handleMouseUp);
+        track.addEventListener('touchend', handleMouseUp);
+
+        track.addEventListener('mousemove', handleMouseMove);
+        track.addEventListener('touchmove', handleMouseMove);
+
+        // Reset auto-scroll after user interaction
+        track.addEventListener('scroll', () => {
+            if (!isDown) {
+                track.classList.add('auto-scroll');
             }
-    
-            function handleMouseLeave() {
-                isDown = false;
-                track.classList.remove('dragging');
-            }
-    
-            function handleMouseUp() {
-                isDown = false;
-                track.classList.remove('dragging');
-            }
-    
-            function handleMouseMove(e) {
-                if (!isDown) return;
-                e.preventDefault();
-                const x = (e.pageX || e.touches[0].pageX) - track.offsetLeft;
-                const walk = (x - startX) * 2; // Adjust scroll speed
-                track.scrollLeft = scrollLeft - walk;
-            }
-    
-            // Event listeners
-            track.addEventListener('mousedown', handleMouseDown);
-            track.addEventListener('touchstart', handleMouseDown);
-    
-            track.addEventListener('mouseleave', handleMouseLeave);
-            track.addEventListener('mouseup', handleMouseUp);
-            track.addEventListener('touchend', handleMouseUp);
-    
-            track.addEventListener('mousemove', handleMouseMove);
-            track.addEventListener('touchmove', handleMouseMove);
-    
-            // Reset auto-scroll after user interaction
-            track.addEventListener('scroll', () => {
-                if (!isDown) {
-                    track.classList.add('auto-scroll');
-                }
-            });
-    
-        </script>
+        });
+
+    </script>
     @endpush
 </x-app>
