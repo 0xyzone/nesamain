@@ -15,6 +15,6 @@
     </nav>
     <x-socials></x-socials>
     <p class="text-sm text-gray-500 flex gap-2">
-        © 2024 NESA {{--  . <a href="#" class="text-white"> Privacy Policy</a> --}}
+        © 2024 Nepal Esports Association {{--  . <a href="#" class="text-white"> Privacy Policy</a> --}}
     </p>
 </footer>
