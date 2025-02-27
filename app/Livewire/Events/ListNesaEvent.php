@@ -60,7 +60,8 @@ class ListNesaEvent extends Component implements HasForms, HasTable
                 Tables\Actions\BulkActionGroup::make([
                     //
                 ]),
-            ]);
+            ])
+            ->defaultSort('end_date', 'desc');
     }
 
     public function render(): View
