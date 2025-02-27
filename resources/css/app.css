@@ -11,4 +11,8 @@
     .button-styled{
         @apply w-max px-6 py-2 text-base bg-base-color text-white border-none cursor-pointer font-medium no-underline;
     }
+
+    .button-styled-discord{
+        @apply w-max px-6 py-2 text-base bg-indigo-600 text-white border-none cursor-pointer font-medium no-underline;
+    }
 }

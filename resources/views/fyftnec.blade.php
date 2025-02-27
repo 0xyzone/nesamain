@@ -66,7 +66,10 @@
                     <h1 class="text-base md:text-xl lg:text-3xl 2xl:text-5xl uppercase font-bold text-center">
                         Are You Ready to Compete?
                     </h1>
-                    <a href="https://meroticket.com/tournament-registration" class="button-styled">Register Now</a>
+                    <div class="flex gap-2">
+                        <a href="https://meroticket.com/tournament-registration" class="button-styled">Register Now</a>
+                        <a href="https://dsc.gg/fyftnec" class="button-styled-discord flex gap-2 items-center"><x-fab-discord class="w-6 h-6" />Join discord</a>
+                    </div>
                 </div>
             </div>
         </div>
