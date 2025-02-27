@@ -129,18 +129,20 @@
                 &times;
             </button>
             <h2 class="text-2xl font-bold mb-6 text-base-color">Contact Sponsorship Team</h2>
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <p class="text-gray-600">
-                    <strong>Sliu Shrestha</strong><br>
-                    Email: <a href="mailto:miceintl.np@gmail.com" class="text-blue-600">miceintl.np@gmail.com</a><br>
-                    Phone: <a href="tel:98510145661" class="text-blue-600">98510145661</a>
-                </p>
-                <p class="text-gray-600">
-                    <strong>Saurav Bikram Pant</strong><br>
-                    Email: <a href="mailto:saurav@kailaasa-advert.com" class="text-blue-600">saurav@kailaasa-advert.com</a><br>
-                    Phone: <a href="tel:9849249331" class="text-blue-600">9849249331</a>
-                </p>
-                <a href="https://flipbookpdf.net/web/site/ad7b2dfb36f13c5385f68d68ce555d92b7e39c70202502.pdf.html" target="_blank" class="button-styled col-span-2 self-center">Sponsorship Proposal</a>
+            <div class="grid grid-cols-1 lg:grid-cols-2">
+                <div class="text-stone-600 flex flex-col">
+                    <strong>Sliu Shrestha</strong>
+                    <p class="text-stone-600">Email: <a href="mailto:miceintl.np@gmail.com" class="text-blue-600">miceintl.np@gmail.com</a></p>
+                    <p class="text-stone-600">Phone: <a href="tel:98510145661" class="text-blue-600">98510145661</a></p>
+                </div>
+                <div class="text-stone-600 flex flex-col">
+                    <strong>Saurav Bikram Pant</strong>
+                    <p class="text-stone-600">Email: <a href="mailto:saurav@kailaasa-advert.com" class="text-blue-600">saurav@kailaasa-advert.com</a></p>
+                    <p class="text-stone-600">Phone: <a href="tel:9849249331" class="text-blue-600">9849249331</a></p>
+                </div>
+                <div>
+                    <a href="https://flipbookpdf.net/web/site/ad7b2dfb36f13c5385f68d68ce555d92b7e39c70202502.pdf.html" target="_blank" class="button-styled col-span-2 self-center">Sponsorship Proposal</a>
+                </div>
             </div>
         </div>
     </div>
