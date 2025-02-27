@@ -140,7 +140,7 @@
                     Email: <a href="mailto:saurav@kailaasa-advert.com" class="text-blue-600">saurav@kailaasa-advert.com</a><br>
                     Phone: <a href="tel:9849249331" class="text-blue-600">9849249331</a>
                 </p>
-                <a href="https://www.flipbookpdf.net/web/site/47fb22f30916694b1ffa1dcc6ab2cfaf41216b53202502.pdf.html" target="_blank" class="button-styled col-span-2 self-center">Sponsorship Proposal</a>
+                <a href="https://flipbookpdf.net/web/site/ad7b2dfb36f13c5385f68d68ce555d92b7e39c70202502.pdf.html" target="_blank" class="button-styled col-span-2 self-center">Sponsorship Proposal</a>
             </div>
         </div>
     </div>
