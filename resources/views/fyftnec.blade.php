@@ -129,7 +129,7 @@
                 &times;
             </button>
             <h2 class="text-2xl font-bold mb-6 text-base-color">Contact Sponsorship Team</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 <p class="text-gray-600">
                     <strong>Sliu Shrestha</strong><br>
                     Email: <a href="mailto:miceintl.np@gmail.com" class="text-blue-600">miceintl.np@gmail.com</a><br>
