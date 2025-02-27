@@ -110,7 +110,7 @@
     <!-- Sponsorship Opportunity -->
     <div class="mt-20">
         <div class="relative h-[50vh] w-full rounded-2xl overflow-hidden">
-            <img src="{{ asset('img/nesa/nesa-04.jpg') }}" alt="Sponsorship Opportunity" class="h-full w-full object-cover" />
+            <img src="{{ asset('img/nesa/nesa-09.jpg') }}" alt="Sponsorship Opportunity" class="h-full w-full object-cover" />
             <div class="absolute inset-0 h-full w-full bg-background bg-opacity-50">
                 <div class="h-full w-full flex flex-col gap-2 items-center justify-center">
                     <h1 class="text-base md:text-xl lg:text-3xl 2xl:text-5xl uppercase font-bold text-center">
