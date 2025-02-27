@@ -2,16 +2,18 @@
 
 namespace App\Livewire\Events;
 
-use App\Models\NesaEvent;
-use Filament\Forms\Concerns\InteractsWithForms;
-use Filament\Forms\Contracts\HasForms;
 use Filament\Tables;
-use Filament\Tables\Concerns\InteractsWithTable;
-use Filament\Tables\Contracts\HasTable;
-use Filament\Tables\Table;
 use Livewire\Component;
+use App\Models\NesaEvent;
+use Filament\Tables\Table;
+use Filament\Support\Colors\Color;
 use Illuminate\Contracts\View\View;
+use Filament\Forms\Contracts\HasForms;
+use Filament\Tables\Contracts\HasTable;
 use Illuminate\Database\Eloquent\Builder;
+use Filament\Tables\Enums\ActionsPosition;
+use Filament\Forms\Concerns\InteractsWithForms;
+use Filament\Tables\Concerns\InteractsWithTable;
 
 class ListNesaEvent extends Component implements HasForms, HasTable
 {
@@ -45,7 +47,14 @@ class ListNesaEvent extends Component implements HasForms, HasTable
                 //
             ])
             ->actions([
-                //
+                Tables\Actions\Action::make('View Event')
+                ->url(fn (NesaEvent $record): string | null => $record->event_page_url ?? null)
+                ->button()
+                ->iconButton()
+                ->icon('heroicon-s-eye')
+                ->color(Color::Amber)
+                ->openUrlInNewTab()
+                ->visible(fn (NesaEvent $record): bool => $record->event_page_url != null)
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([

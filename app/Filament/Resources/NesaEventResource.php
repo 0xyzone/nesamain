@@ -47,6 +47,7 @@ class NesaEventResource extends Resource
                 Forms\Components\TextInput::make('organizers'),
                 Forms\Components\TextInput::make('prize_pool')
                     ->numeric(),
+                Forms\Components\TextInput::make('event_page_url'),
                 Forms\Components\DatePicker::make('from_date'),
                 Forms\Components\DatePicker::make('end_date'),
             ]);
@@ -84,6 +85,9 @@ class NesaEventResource extends Resource
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
+                Tables\Actions\Action::make('View Event')
+                ->url(fn (NesaEvent $record): string | null => $record->event_page_url ?? null)
+                ->button()
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
