@@ -130,26 +130,17 @@
             </button>
             <h2 class="text-2xl font-bold mb-6 text-base-color">Contact Sponsorship Team</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div>
-                    <div class="space-y-2">
-                        <p class="font-medium text-gray-800">Contact Persons:</p>
-                        <p class="text-gray-600">
-                            <strong>Sliu Shrestha</strong><br>
-                            Email: <a href="mailto:miceintl.np@gmail.com" class="text-blue-600">miceintl.np@gmail.com</a><br>
-                            Phone: <a href="tel:98510145661" class="text-blue-600">98510145661</a>
-                        </p>
-                        <p class="text-gray-600">
-                            <strong>Saurav Bikram Pant</strong><br>
-                            Email: <a href="mailto:saurav@kailaasa-advert.com" class="text-blue-600">saurav@kailaasa-advert.com</a><br>
-                            Phone: <a href="tel:9849249331" class="text-blue-600">9849249331</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="md:border-l md:pl-8">
-                    <ul class="space-y-2 text-gray-600">
-                        <li><a href="https://www.flipbookpdf.net/web/site/47fb22f30916694b1ffa1dcc6ab2cfaf41216b53202502.pdf.html" target="_blank" class="button-styled">Sponsorship Proposal</a></li>
-                    </ul>
-                </div>
+                <p class="text-gray-600">
+                    <strong>Sliu Shrestha</strong><br>
+                    Email: <a href="mailto:miceintl.np@gmail.com" class="text-blue-600">miceintl.np@gmail.com</a><br>
+                    Phone: <a href="tel:98510145661" class="text-blue-600">98510145661</a>
+                </p>
+                <p class="text-gray-600">
+                    <strong>Saurav Bikram Pant</strong><br>
+                    Email: <a href="mailto:saurav@kailaasa-advert.com" class="text-blue-600">saurav@kailaasa-advert.com</a><br>
+                    Phone: <a href="tel:9849249331" class="text-blue-600">9849249331</a>
+                </p>
+                <a href="https://www.flipbookpdf.net/web/site/47fb22f30916694b1ffa1dcc6ab2cfaf41216b53202502.pdf.html" target="_blank" class="button-styled col-span-2 self-center">Sponsorship Proposal</a>
             </div>
         </div>
     </div>
@@ -174,7 +165,6 @@
 
     </script>
     <style>
-
         .button-styled:hover {
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
