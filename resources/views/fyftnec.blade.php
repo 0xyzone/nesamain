@@ -107,7 +107,33 @@
 
     </style>
 
-    <!-- Sponsorship Opportunity -->
+    <!-- Sponsorship Opportunities -->
+    <div class="mt-20">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 md:gap-5 lg:gap-10">
+            <div class="w-full h-full relative flex flex-col items-center justify-center py-10">
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-[0]">
+                    <div class="h-[450px] w-[360px] rounded-xl bg-white bg-opacity-25 rotate-[10deg]"></div>
+                </div>
+                <a href="https://www.flipbookpdf.net/web/site/79197faddeb74cb873159866eca5cb95dd576c4f202502.pdf.html" target="_blank" class="h-[450px] w-[360px] rounded-xl z-20 shadow-lg shadow-[#181918]">
+                    <img src="{{ asset('img/sponsor proposal cover.jpg') }}" alt="banner-1" class="h-full w-full object-cover rounded-xl" />
+                </a>
+            </div>
+            <div class="mt-5 sm:mt-16 lg:mt-0 flex flex-col justify-center gap-3">
+                <h1 class="text-sm text-base-color font-bold">For Sponsors</h1>
+                <h1 class="text-2xl">Sponshorship Opportunities Available</h1>
+                <p class="text-justify text-gray-400">
+                    Nepal Esports Association (NESA) offers exceptional sponsorship opportunities for brands looking to connect with Nepal's fast-growing esports community. Partner with us to gain exclusive access to a passionate audience of gamers and fans through tournament branding, digital exposure, and experiential marketing opportunities. Our tailored packages include title sponsorship, event partnerships, and product collaboration opportunities - all designed to maximize your brand visibility among our 50,000+ community members.
+                    {{-- Align your brand with South Asia's premier esports organization recognized by <strong>International Esports Federation (IESF), Global Esports Federation (GEF), and Asian Electronic Sports Federation (AESF)</strong>, while supporting the development of competitive gaming in Nepal. --}}
+                </p>
+                <div class="flex gap-2 items-center">
+                    <button onclick="showContactModal()" class="button-styled duration-150 !text-xs lg:!text-lg">Contact Us</button>
+                    <a href="https://www.flipbookpdf.net/web/site/79197faddeb74cb873159866eca5cb95dd576c4f202502.pdf.html" target="_blank" class="button-styled col-span-2 self-center bg-lime-600 duration-150 !text-xs lg:!text-lg">Sponsorship Proposal</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{-- <!-- Sponsorship Opportunity -->
     <div class="mt-20">
         <div class="relative h-[50vh] w-full rounded-2xl overflow-hidden">
             <img src="{{ asset('img/nesa/nesa-02.jpg') }}" alt="Sponsorship Opportunity" class="h-full w-full object-cover" />
@@ -116,11 +142,13 @@
                     <h1 class="text-base md:text-xl lg:text-3xl 2xl:text-5xl uppercase font-bold text-center">
                         Sponsorship Opportunities Available
                     </h1>
-                    <button onclick="showContactModal()" class="button-styled mt-4">Contact Us</button>
+                    <div class="flex gap-2">
+                        <button onclick="showContactModal()" class="button-styled mt-4">Contact Us</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 
     <!-- Contact Modal -->
     <div id="contactModal" class="fixed hidden inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
