@@ -179,7 +179,7 @@
     </style>
     @endpush
 
-    <!-- sponsors section -->
+    <!-- partners section -->
     <div class="mt-20">
         <h1 class="text-sm lg:text-6xl text-base-color font-bold text-center mb-8">OUR PARTNERS</h1>
 
@@ -191,7 +191,7 @@
                 @for($i = 0; $i < 2; $i++) <!-- Run twice for infinite loop -->
                     @foreach(range(1, 12) as $num)
                     <div class="slide min-w-[150px] md:min-w-[200px] flex items-center">
-                        <img src="{{ asset('img/sponsors/'.$num.'.png') }}" alt="Sponsor {{ $num }}" class="w-full h-auto object-contain max-h-[250px] grayscale hover:grayscale-0 transition-all duration-300" />
+                        <img src="{{ asset('img/partners/'.$num.'.png') }}" alt="Sponsor {{ $num }}" class="w-full h-auto object-contain max-h-[250px] grayscale hover:grayscale-0 transition-all duration-300" />
                     </div>
                     @endforeach
                     @endfor
