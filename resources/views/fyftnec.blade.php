@@ -141,7 +141,7 @@
                     <p class="text-stone-600">Phone: <a href="tel:9849249331" class="text-blue-600">9849249331</a></p>
                 </div>
                 <div>
-                    <a href="https://flipbookpdf.net/web/site/ad7b2dfb36f13c5385f68d68ce555d92b7e39c70202502.pdf.html" target="_blank" class="button-styled col-span-2 self-center">Sponsorship Proposal</a>
+                    <a href="https://www.flipbookpdf.net/web/site/79197faddeb74cb873159866eca5cb95dd576c4f202502.pdf.html" target="_blank" class="button-styled col-span-2 self-center">Sponsorship Proposal</a>
                 </div>
             </div>
         </div>
