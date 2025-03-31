@@ -31,7 +31,7 @@
                 <div class="max-w-5xl w-full text-center flex">
                     <h1 class="text-base-color text-3xl">
                         <i class="fa-solid fa-quote-left opacity-50 text-6xl text-white"></i>
-                        Mission Statement & Values: Nepal Esports Association is a social impact organization that aspires to promote and develop Esports as a main stream sports by ensuring equal access while instilling values of teamwork, respect discipline and integrity.
+                        Mission Statement & Values: Nepal Esports Association is a social impact organization that aspires to promote and develop Esports as a main stream sports by ensuring equal access while instilling values of teamwork, respect, discipline and integrity.
                         <i class="fa-solid fa-quote-right opacity-50 text-4xl text-white"></i>
                     </h1>
                 </div>
